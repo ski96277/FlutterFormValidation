@@ -25,9 +25,13 @@ class MyTextFormField extends StatelessWidget {
 
             hintText: hintText,
             contentPadding: EdgeInsets.all(15.0),
-            border: InputBorder.none,
             filled: true,
-            fillColor: Colors.grey),
+            fillColor: Colors.grey,
+          border: OutlineInputBorder(
+
+            borderSide:  BorderSide(color: Colors.teal),
+          ),
+        ),
         obscureText: isPassword ? true : false,
         validator: validator,
         onSaved: onSaved,
