@@ -22,6 +22,7 @@ class MyTextFormField extends StatelessWidget {
       padding: EdgeInsets.all(8.0),
       child: TextFormField(
         decoration: InputDecoration(
+          
             hintText: hintText,
             contentPadding: EdgeInsets.all(15.0),
             border: InputBorder.none,
